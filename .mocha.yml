@@ -1,0 +1,6 @@
+env:
+  mocha: true
+
+rules:
+  ## expect(foo).to.be.true (situation in chai.js)
+  no-unused-expressions: 0

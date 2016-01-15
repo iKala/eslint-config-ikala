@@ -1,0 +1,6 @@
+extends:
+  - './.common.yml'
+  - './.es.yml'
+  - './.babel.yml'
+  - './.node.yml'
+  - './.express.yml'

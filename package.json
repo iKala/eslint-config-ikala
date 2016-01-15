@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "frontend-es-coding-style",
+  "version": "0.1.0",
+  "description": "frontend coding style rules",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.corp.ikala.tv:lezi.chen/frontend-es-coding-style.git"
+  },
+  "keywords": [],
+  "dependencies": {
+    "babel-eslint": "^4.1.6",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^3.1.0",
+    "eslint-plugin-react": "^3.15.0"
+  }
+}

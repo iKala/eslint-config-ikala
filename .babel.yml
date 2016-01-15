@@ -1,0 +1,7 @@
+# You should run `npm install eslint babel-eslint --save-dev` first
+parser: babel-eslint
+
+rules:
+  ## override when use babel-eslint
+  # error if you call some value or function when it is not defined in scope yet.
+  no-undef: 2
