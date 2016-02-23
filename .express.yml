@@ -1,3 +1,0 @@
-rules:
-  ## express.Router() (situation in express.js)
-  new-cap: 0

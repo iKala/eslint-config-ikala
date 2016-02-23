@@ -1,21 +1,21 @@
 ## Usage
 
-LIVEhouse javascript use babel to compile ES2015 / ES2016 and extend airbnb's coding style. LIVEhouse use [eslint](http://eslint.org/docs/rules) as linter, so you need to install following packages:
+LIVEhouse noders uses babel as compiler for ES2015+, for this intent LIVEhouse noders extends eslint:recommended and airbnb coding style. Also LIVEhouse uses [eslint](http://eslint.org/docs/rules) as linter, so you need to install following packages:
 
-- eslint
 - babel-eslint
+- eslint
 - eslint-config-airbnb
-- eslint-plugin-react
-- frontend-es-coding-style
+- eslint-config-livehouse
 
 #### Install
 
 ```sh
 # sh
-npm install eslint babel-eslint eslint-config-airbnb eslint-plugin-react frontend-es-coding-style --save-dev
+npm install babel-eslint eslint eslint-config-airbnb --save-dev
+npm install git+ssh://git@gitlab.corp.ikala.tv:lezi.chen/eslint-config-livehouse.git --save-dev
 ```
 
-if you have any question about rule, please visit [rules](http://eslint.org/docs/rules) for detail.
+Please visit [rules](http://eslint.org/docs/rules) for more detail.
 
 #### Config
 
@@ -24,11 +24,14 @@ Create a file called `.eslintrc.yml` and add code as below to get it work:
 ```yaml
 # .eslintrc.yml
 extends:
-  - './node_modules/frontend-es-coding-style/backend.yml'
+  - 'livehouse/browser' # for browser uses
+  - 'livehouse/node' # for node uses
+  # - 'livehouse/tests' # for tests uses, NOT implement yet
+  - 'livehouse' # whatever
 ```
 
 #### Install IDE/editor plugin
 
 You should install plugin for your IDE or editor.
 
-please visit http://eslint.org/docs/user-guide/integrations.html for more detail.
+Please visit http://eslint.org/docs/user-guide/integrations.html for more detail.
