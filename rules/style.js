@@ -20,7 +20,7 @@ module.exports = {
     quotes: [2, 'single'],
 
     // USE `\n` (newline) when use `else` keyword. which means NOT allow `} else {`
-    'brace-style': [2, "stroustrup"]
+    'brace-style': [2, "stroustrup"],
 
     //////////////////////////////////////
     // no semicolon style, refer to ASI //
