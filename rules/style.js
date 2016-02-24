@@ -19,6 +19,9 @@ module.exports = {
     // USE single quote, NOT double quotes.
     quotes: [2, 'single'],
 
+    // USE `\n` (newline) when use `else` keyword. which means NOT allow `} else {`
+    'brace-style': [2, "stroustrup"]
+
     //////////////////////////////////////
     // no semicolon style, refer to ASI //
     //////////////////////////////////////
