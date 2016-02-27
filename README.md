@@ -12,7 +12,7 @@ LIVEhouse noders uses babel as compiler for ES2015+, for this intent LIVEhouse n
 ```sh
 # sh
 npm install babel-eslint eslint eslint-config-airbnb --save-dev
-npm install git+ssh://git@gitlab.corp.ikala.tv:lezi.chen/eslint-config-livehouse.git --save-dev
+npm install git+ssh://git@gitlab.corp.ikala.tv:30022/npm/eslint-config-livehouse.git#v0.2.x --save-dev
 ```
 
 Please visit [rules](http://eslint.org/docs/rules) for more detail.
