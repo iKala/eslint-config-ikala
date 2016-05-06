@@ -2,8 +2,8 @@
 
 LIVEhouse noders uses babel as compiler for ES2015+, for this intent LIVEhouse noders extends eslint:recommended and airbnb coding style. Also LIVEhouse uses [eslint](http://eslint.org/docs/rules) as linter, so you need to install following packages:
 
-- babel-eslint
-- eslint
+- babel-eslint@^6 (*you'll need it if you use stuff like class properties, decorators, async/await, types.*)
+- eslint@^2
 - eslint-config-airbnb
 - eslint-config-livehouse
 
@@ -12,7 +12,7 @@ LIVEhouse noders uses babel as compiler for ES2015+, for this intent LIVEhouse n
 ```sh
 # sh
 npm install babel-eslint eslint eslint-config-airbnb --save-dev
-npm install git+ssh://git@gitlab.corp.ikala.tv:30022/npm/eslint-config-livehouse.git#v0.2.x --save-dev
+npm install eslint-config-livehouse --save-dev
 ```
 
 Please visit [rules](http://eslint.org/docs/rules) for more detail.
@@ -28,6 +28,15 @@ extends:
   - 'livehouse/node' # for node uses
   # - 'livehouse/tests' # for tests uses, NOT implement yet
   - 'livehouse' # whatever
+```
+
+If you need only partial configuration, you can do following below:
+
+```yaml
+# .eslintrc.yml
+extends:
+  - "livehouse/rules/es2015"
+  - "livehouse/rules/style"
 ```
 
 #### Install IDE/editor plugin
