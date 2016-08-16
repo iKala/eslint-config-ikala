@@ -13,14 +13,19 @@ module.exports = {
     //... but NOT allow `if (foo)\n doSomething()`, etc..
     curly: [2, 'multi-line'],
 
-    // ALLOW you make [1, 2, 3,] or [a:1, b:1, c:1,] to written IN multiline.
-    'comma-dangle': 0,
+    // ALLOW [1, 2, 3] but NOT [1, 2, 3,]
+    // multiline array/object elements MUST include trailing comma, ex:
+    // {
+    //   a: 1,
+    //   b: 2,
+    // }
+    'comma-dangle': [2, 'always-multiline'],
 
     // USE single quote, NOT double quotes.
     quotes: [2, 'single'],
 
     // USE `\n` (newline) when use `else` keyword. which means NOT allow `} else {`
-    'brace-style': [2, "stroustrup"],
+    'brace-style': [2, 'stroustrup'],
 
     //////////////////////////////////////
     // no semicolon style, refer to ASI //
