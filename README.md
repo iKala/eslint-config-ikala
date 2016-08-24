@@ -11,7 +11,10 @@ LIVEhouse noders uses babel as compiler for ES2015+, for this intent LIVEhouse n
 
 ```sh
 # sh
-npm install babel-eslint eslint eslint-config-airbnb --save-dev
+npm install babel-eslint eslint \
+  eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react \
+  eslint-config-airbnb \
+  --save-dev
 npm install eslint-config-livehouse --save-dev
 ```
 
