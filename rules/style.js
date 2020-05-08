@@ -1,17 +1,17 @@
 module.exports = {
   rules: {
     // NOT allow use `var` keyword
-    'no-var': 2,
+    'no-var': 'error',
 
     // NOT allow un-used vars
-    'no-unused-vars': 1,
+    'no-unused-vars': 'error',
 
     // ALLOW function hoisting
-    'no-use-before-define': [2, 'nofunc'],
+    'no-use-before-define': ['error', 'nofunc'],
 
     // ALLOW single line, like this: `if (foo) foo++`
     //... but NOT allow `if (foo)\n doSomething()`, etc..
-    curly: [2, 'multi-line'],
+    curly: ['error', 'multi-line'],
 
     // ALLOW [1, 2, 3] but NOT [1, 2, 3,]
     // multiline array/object elements MUST include trailing comma, ex:
@@ -19,23 +19,23 @@ module.exports = {
     //   a: 1,
     //   b: 2,
     // }
-    'comma-dangle': [2, 'always-multiline'],
+    'comma-dangle': ['error', 'always-multiline'],
 
     // USE single quote, NOT double quotes.
-    quotes: [2, 'single'],
+    quotes: ['error', 'single'],
 
     // USE `\n` (newline) when use `else` keyword. which means NOT allow `} else {`
-    'brace-style': [2, 'stroustrup'],
+    'brace-style': ['error', 'stroustrup'],
 
     //////////////////////////////////////
     // no semicolon style, refer to ASI //
     //////////////////////////////////////
 
     // allow you written `;[].forEach.apply` but not allow `jQuery('body').remove();`
-    semi: [2, 'never'],
+    semi: ['error', 'never'],
 
-    'no-extra-semi': 2,
+    'no-extra-semi': 'error',
 
-    'semi-spacing': [2, { before: false, after: true }],
+    'semi-spacing': ['error', { before: false, after: true }],
   }
 }

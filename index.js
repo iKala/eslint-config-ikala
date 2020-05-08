@@ -1,6 +1,11 @@
 module.exports = {
+  env: {
+    node: true,
+    browser: true,
+    es2017: true,
+  },
   extends: [
-    'livehouse/node',
-    'livehouse/browser',
+    'eslint-config-airbnb',
+    'livehouse/rules/style'
   ]
 }
