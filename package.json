@@ -1,8 +1,8 @@
 {
-  "name": "eslint-config-livehouse",
+  "name": "eslint-config-ikala",
   "main": "index.js",
   "version": "3.0.1",
-  "description": "LIVEhouse coding style rules; project owner can choose recommanded/airbnb/google as the base configuration",
+  "description": "Ikala coding style rules; project owner can choose recommanded/airbnb/google as the base configuration",
   "repository": {
     "type": "git",
     "url": "git@github.com:iKala/eslint-config-livehouse.git"
