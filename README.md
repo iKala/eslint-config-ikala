@@ -1,45 +1,38 @@
-## Usage
+## Prerequisite
 
-LIVEhouse noders uses babel as compiler for ES2015+, for this intent LIVEhouse noders extends eslint:recommended and airbnb coding style. Also LIVEhouse uses [eslint](http://eslint.org/docs/rules) as linter, so you need to install following packages:
-
-- babel-eslint@^6 (*you'll need it if you use stuff like class properties, decorators, async/await, types.*)
-- eslint@^2
-- eslint-config-airbnb
-- eslint-config-livehouse
+- eslint(^6.0.0)
+- eslint-config-livehouse(^3.0.0)
+- eslint-plugin-react(^7.14.0)
+- @typescript-eslint/eslint-plugin(^2.0.0)
 
 #### Install
 
 ```sh
-# sh
-npm install babel-eslint eslint \
-  eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react \
-  eslint-config-airbnb \
-  --save-dev
-npm install eslint-config-livehouse --save-dev
+npm install eslint@"^6.0.0" eslint-config-livehouse@"^3.0.0" \
+eslint-plugin-react@"^7.14.0"  @typescript-eslint/eslint-plugin@"^2.0.0" --save-dev
 ```
 
 Please visit [rules](http://eslint.org/docs/rules) for more detail.
 
 #### Config
 
-Create a file called `.eslintrc.yml` and add code as below to get it work:
+Create a file named `.eslintrc.json` and add code as follows:
 
-```yaml
-# .eslintrc.yml
-extends:
-  - 'livehouse/browser' # for browser uses
-  - 'livehouse/node' # for node uses
-  # - 'livehouse/tests' # for tests uses, NOT implement yet
-  - 'livehouse' # whatever
-```
-
-If you need only partial configuration, you can do following below:
-
-```yaml
-# .eslintrc.yml
-extends:
-  - "livehouse/rules/es2015"
-  - "livehouse/rules/style"
+```json
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "livehouse"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  }
+}
 ```
 
 #### Install IDE/editor plugin
