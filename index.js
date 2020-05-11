@@ -5,6 +5,10 @@ module.exports = {
     es2017: true,
   },
   extends: [
-    './rules/style.js'
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    './rules/style.js',
+    './rules/typescriptStyle.js'
   ]
 }
