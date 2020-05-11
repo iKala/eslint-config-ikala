@@ -15,11 +15,13 @@
     "javascript",
     "styleguide"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.0.0",
+    "typescript": "^3.0.0"
+  },
   "devDependencies": {},
   "peerDependencies": {
-    "eslint": "^6.0.0",
-    "@typescript-eslint/parser": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^2.0.0"
   }
 }
