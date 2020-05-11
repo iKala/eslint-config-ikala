@@ -5,12 +5,19 @@ module.exports = {
       {
         multiline: {
           delimiter: 'none',
-          requireLast: false
+          requireLast: false,
         },
         singleline: {
           delimiter: 'semi',
-          requireLast: false
+          requireLast: false,
         }
+      }
+    ],
+    '@typescript-eslint/no-inferrable-types': [
+      'error',
+      {
+        ignoreParameters: true,
+        ignoreProperties: true,
       }
     ]
   }
