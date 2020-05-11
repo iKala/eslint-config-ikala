@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-livehouse",
   "main": "index.js",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "LIVEhouse coding style rules; project owner can choose recommanded/airbnb/google as the base configuration",
   "repository": {
     "type": "git",
