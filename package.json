@@ -2,7 +2,7 @@
   "name": "eslint-config-livehouse",
   "main": "index.js",
   "version": "2.0.0",
-  "description": "LIVEhouse coding style rules that extends eslint:recommended and airbnb.",
+  "description": "LIVEhouse coding style rules; project owner can choose recommanded/airbnb/google as the base configuration",
   "repository": {
     "type": "git",
     "url": "git@github.com:iKala/eslint-config-livehouse.git"
@@ -15,8 +15,14 @@
     "javascript",
     "styleguide"
   ],
-  "dependencies": {},
-  "devDependencies": {
-    "eslint": "^2.9.0"
+  "dependencies": {
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.0.0",
+    "typescript": "^3.0.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "eslint-plugin-react": "^7.14.0"
   }
 }
