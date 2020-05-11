@@ -37,5 +37,8 @@ module.exports = {
     'no-extra-semi': 'error',
 
     'semi-spacing': ['error', { before: false, after: true }],
+
+    // don't put extra spaces between function keyword and its parenthesis
+    'space-before-function-paren': ['error', 'never'],
   }
 }
