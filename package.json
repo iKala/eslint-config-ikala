@@ -2,7 +2,7 @@
   "name": "eslint-config-livehouse",
   "main": "index.js",
   "version": "2.0.0",
-  "description": "LIVEhouse coding style rules that extends eslint:recommended and airbnb.",
+  "description": "LIVEhouse coding style rules; project owner can choose recommanded/airbnb/google as the base configuration",
   "repository": {
     "type": "git",
     "url": "git@github.com:iKala/eslint-config-livehouse.git"
@@ -18,7 +18,6 @@
   "dependencies": {},
   "devDependencies": {},
   "peerDependencies": {
-    "eslint": ">= 6",
-    "eslint-config-airbnb": "^18.1.0"
+    "eslint": ">= 6"
   }
 }

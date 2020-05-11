@@ -5,7 +5,6 @@ module.exports = {
     es2017: true,
   },
   extends: [
-    'eslint-config-airbnb',
-    'livehouse/rules/style'
+    './rules/style.js'
   ]
 }
