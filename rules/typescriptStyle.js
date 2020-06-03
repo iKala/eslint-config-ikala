@@ -19,6 +19,12 @@ module.exports = {
         ignoreParameters: true,
         ignoreProperties: true,
       }
+    ],
+    '@typescript-eslint/explicit-member-accessibility': [
+      'error',
+      {
+        accessibility: 'explicit'
+      }
     ]
   }
 }
