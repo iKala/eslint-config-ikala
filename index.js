@@ -16,6 +16,11 @@ module.exports = {
     'react',
     '@typescript-eslint',
   ],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
