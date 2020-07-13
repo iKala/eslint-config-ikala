@@ -24,9 +24,22 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    './rules/style.js',
-    './rules/typescriptStyle.js'
-  ]
+  ],
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      extends: [
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
+        './rules/style.js',
+        './rules/typescriptStyle.js',
+      ],
+    },
+    {
+      files: ['*.js', '*.jsx'],
+      extends: [
+        './rules/style.js',
+      ],
+    },
+  ],
 }
